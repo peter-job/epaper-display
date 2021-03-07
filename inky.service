@@ -1,0 +1,14 @@
+[Unit]
+Description=Inky pHAT Service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Restart=always
+RestartSec=1
+User=pi
+ExecStart=python /home/pi/cardboard-cafe/epaper-display/main.py
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

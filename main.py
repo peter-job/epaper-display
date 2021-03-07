@@ -80,7 +80,7 @@ while(1):
     # Print Timestamp
     now = datetime.now()
     current_time = now.strftime("%I:%M %p")
-    print "updated @ " + current_time
+    print "inky updated @ " + current_time
 
     # Sleep
     time.sleep(300)
